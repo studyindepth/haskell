@@ -38,7 +38,7 @@ zip [0..] ["a", "b", "c"] -- lazy evaluation
 ## Find all right triangles that has integers of all sides smaller than or equal to 10 and has a perimeter of 24
 
 ```haskell
-let rightTriangles = [(a, b, c) | a <- [1..10], b <- [1..10], c <- [1..10] | a^2 + b^2 == c^2]
+let rightTriangles = [(a, b, c) | a <- [1..10], b <- [1..10], c <- [1..10] | a^2 + b^2 == c^2, a + b + c == 24]
 ```
 
 
